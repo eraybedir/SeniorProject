@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "HG1XjTuEOAefckWVi/rVLhe5eRuptzeDJYzq1wCGpJ0=",
+  "Source": "MarketAPI",
+  "BasePath": "_content/MarketAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
