@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-CSV_FILE_PATH = r"C:\Users\bilgi\OneDrive\Masaüstü\Senior Project\scraper\enriched_urunler.csv"
+CSV_FILE_PATH = r"C:\Users\bilgi\OneDrive\Masaüstü\Senior Project\scraper\enriched_urunler_new.csv"
 
 # CSV dosyasını oku ve JSON'a dönüştür
 def load_products():

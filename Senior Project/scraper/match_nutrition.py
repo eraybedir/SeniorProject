@@ -4,10 +4,10 @@ import time
 import re
 
 # Dosya yolları
-CSV_INPUT = "scraper/products.csv"
-CSV_NUTRITION = "scraper/besin_degerleri.csv"
-OUTPUT_CSV = "scraper/enriched_urunler.csv"
-OUTPUT_JSON = "scraper/enriched_urunler.json"
+CSV_INPUT = "products_new.csv"
+CSV_NUTRITION = "besin_degerleri.csv"
+OUTPUT_CSV = "enriched_urunler_new.csv"
+OUTPUT_JSON = "enriched_urunler_new.json"
 
 # 🔎 Besin değerleri CSV'yi yükle
 def load_nutrition_reference(file_path):
@@ -49,7 +49,7 @@ def enrich_all_products():
     nutrition_ref = load_nutrition_reference(CSV_NUTRITION)
     enriched = []
 
-    print(f"🔍 {len(df)} ürün işleniyor...\n")
+    print(f" {len(df)} ürün işleniyor...\n")
 
     for i, row in df.iterrows():
         name = row["Ürün İsmi"]
@@ -60,20 +60,22 @@ def enrich_all_products():
             "Market": row["Market"],
             "Price": row["Fiyat"],
             "CategoryName": row["Kategori"],
+            "ImageUrl": row["ImageUrl"],  # ✅ Burayı ekliyoruz
             **nutrition
         }
 
         enriched.append(enriched_product)
-        print(f" {i+1}. ürün işlendi → {name}")
+        print(f"✅ {i+1}. ürün işlendi → {name}")
         time.sleep(0.05)
 
-    # Kaydet
+    # CSV'ye kaydet
     pd.DataFrame(enriched).to_csv(OUTPUT_CSV, index=False, encoding="utf-8-sig")
 
+    # JSON'a kaydet
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(enriched, f, ensure_ascii=False, indent=2)
 
-    print(f"\n İşlem tamamlandı. {OUTPUT_CSV} ve {OUTPUT_JSON} dosyaları oluşturuldu.")
+    print(f"\n✅ İşlem tamamlandı. {OUTPUT_CSV} ve {OUTPUT_JSON} dosyaları oluşturuldu.")
 
 #  Ana çalıştırma
 if __name__ == "__main__":

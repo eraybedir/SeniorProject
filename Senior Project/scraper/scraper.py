@@ -22,31 +22,29 @@ def scrape_cimri():
     all_products = []
 
     for category in categories:
-        print(f"Şu an {category} kategorisini çekiyoruz...")
+        print(f"📦 Şu an {category} kategorisini çekiyoruz...")
         service = Service(EdgeChromiumDriverManager().install())
-        driver = webdriver.Edge(service=service)  # Tarayıcıyı başlat
+        driver = webdriver.Edge(service=service)
         page = 1
 
         while True:
             url = f"{base_url}{category}?page={page}"
             driver.get(url)
-            time.sleep(3)  # Sayfanın yüklenmesini bekle
+            time.sleep(3)
 
             soup = BeautifulSoup(driver.page_source, "html.parser")
 
-            # **1. Ürün isimlerini al**
+            # ✅ Ürün adları
             product_cards = soup.find_all("div", class_="ProductCard_productName__35zi5")
             product_names = [p.get_text(strip=True) for p in product_cards]
 
-            # **2. Market bilgilerini al**
+            # ✅ Market isimleri
             market_tags = soup.find_all("div", class_="WrapperBox_wrapper__1_OBD")
             market_names = [m.find("img")["alt"] if m.find("img") else "Bilinmiyor" for m in market_tags]
 
-            # **3. Fiyat bilgilerini al**
-            # 3. Fiyat bilgilerini al - sadece ilk fiyat (TL) span'ını al
+            # ✅ Fiyatlar (ilk fiyat span'ı)
             price_list = []
             footer_cards = soup.find_all("div", class_="ProductCard_footer__Fc9OL")
-
             for footer in footer_cards:
                 spans = footer.find_all("span", class_="ProductCard_price__10UHp")
                 if spans:
@@ -55,40 +53,44 @@ def scrape_cimri():
                 else:
                     price_list.append("Fiyat Bilinmiyor")
 
+            # ✅ Görsel URL'leri
+            image_containers = soup.find_all("div", class_="ProductCard_imageContainer__ASSCc")
+            image_urls = [
+                div.find("img")["src"] if div.find("img") and div.find("img").has_attr("src") else "Yok"
+                for div in image_containers
+            ]
 
-            # **4. Ürünleri fiyatlarla eşleştir**
+            # ✅ Ürün bilgilerini birleştir
             for i, name in enumerate(product_names):
-                market = market_names[i] if i < len(market_names) else "Bilinmiyor"
-                price = price_list[i] if i < len(price_list) else "Fiyat Bilinmiyor"
-
                 product_info = {
                     "Kategori": category,
                     "Ürün İsmi": name,
-                    "Market": market,
-                    "Fiyat": price,
+                    "Market": market_names[i] if i < len(market_names) else "Bilinmiyor",
+                    "Fiyat": price_list[i] if i < len(price_list) else "Fiyat Bilinmiyor",
+                    "ImageUrl": image_urls[i] if i < len(image_urls) else "Yok"
                 }
 
                 all_products.append(product_info)
                 print(product_info)
 
-            # **5. Sayfa kontrolü**
+            # ✅ Sayfa kontrolü
             next_page_btn = driver.find_elements(By.CSS_SELECTOR, "a[btnmode='next']")
             if next_page_btn:
-                page += 1  # Eğer sonraki sayfa varsa artır
-                print(f"{category} kategorisinde {page}. sayfaya geçiliyor...")
+                page += 1
+                print(f"📄 {category} kategorisinde {page}. sayfaya geçiliyor...")
             else:
-                print(f"{category} kategorisinde son sayfaya ulaşıldı. Diğer kategoriye geçiliyor...")
-                break  # Son sayfa ise kategoriyi değiştir
+                print(f"✅ {category} kategorisi bitti.")
+                break
 
-        driver.quit()  # Tarayıcıyı kapat
+        driver.quit()
 
     return all_products
 
-# **Çalıştır ve sonucu yazdır**
+# ✅ Çalıştır ve CSV'ye kaydet
 products = scrape_cimri()
-print(f"Toplam {len(products)} ürün çekildi!")
+print(f"✅ Toplam {len(products)} ürün çekildi!")
 
 df = pd.DataFrame(products)
-df.to_csv("products.csv",index=False,encoding="utf-8-sig")
-csv_path = os.path.abspath("products.csv")
-print(f"Veriler CSV dosyasına kaydedildi. {csv_path}")
+df.to_csv("products_new.csv", index=False, encoding="utf-8-sig")
+csv_path = os.path.abspath("products_new.csv")
+print(f"📁 Veriler CSV dosyasına kaydedildi: {csv_path}")

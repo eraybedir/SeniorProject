@@ -12,6 +12,8 @@
         public double? FatPer100g { get; set; }
 
         public string CategoryName { get; set; }
+        public string? ImageUrl { get; set; }
+
     }
 
 }

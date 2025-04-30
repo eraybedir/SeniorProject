@@ -33,12 +33,30 @@ namespace MarketAPI.Controllers
 
                 if (category == null)
                 {
-                    // Eğer yoksa yeni bir kategori oluştur (istersen)
+                    // Eğer yoksa yeni bir kategori oluştur 
                     category = new Category { Name = item.CategoryName };
                     _context.Categories.Add(category);
                     await _context.SaveChangesAsync(); // ID üretmesi için
                 }
 
+                // Aynı isim ve markette ürün zaten var mı?
+                var existingProduct = await _context.Products
+                    .FirstOrDefaultAsync(p => p.Name.ToLower() == item.Name.ToLower()
+                                           && p.Market.ToLower() == item.Market.ToLower());
+
+                if (existingProduct != null)
+                {
+                    // Var olan ürünü güncelle
+                    existingProduct.ImageUrl = item.ImageUrl;
+                    existingProduct.CaloriesPer100g = item.CaloriesPer100g;
+                    existingProduct.ProteinPer100g = item.ProteinPer100g;
+                    existingProduct.CarbsPer100g = item.CarbsPer100g;
+                    existingProduct.FatPer100g = item.FatPer100g;
+                    existingProduct.CategoryId = category.Id;
+                    continue;
+                }
+
+                // Yeni ürün ekle
                 var newProduct = new Product
                 {
                     Name = item.Name,
@@ -49,6 +67,7 @@ namespace MarketAPI.Controllers
                     CarbsPer100g = item.CarbsPer100g,
                     FatPer100g = item.FatPer100g,
                     CategoryId = category.Id,
+                    ImageUrl = item.ImageUrl,
                     CreatedAt = DateTime.Now
                 };
 
@@ -65,8 +84,27 @@ namespace MarketAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetProducts()
         {
-            var products = await _context.Products.ToListAsync();
+            var products = await _context.Products
+                .Include(p => p.Category)
+                .Where(p => p.ImageUrl != null && p.CaloriesPer100g != null) // 🔍 filtreleme
+                .Select(p => new
+                {
+                    p.Id,
+                    p.Name,
+                    p.Market,
+                    p.Price,
+                    p.CaloriesPer100g,
+                    p.ProteinPer100g,
+                    p.CarbsPer100g,
+                    p.FatPer100g,
+                    p.ImageUrl,
+                    Category = p.Category.Name,
+                    p.CreatedAt
+                })
+                .ToListAsync();
+
             return Ok(products);
         }
+
     }
 }

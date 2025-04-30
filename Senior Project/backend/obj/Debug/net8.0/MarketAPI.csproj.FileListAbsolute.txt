@@ -342,3 +342,4 @@ C:\Users\bilgi\OneDrive\Masaüstü\Senior Project\backend\obj\Debug\net8.0\refin
 C:\Users\bilgi\OneDrive\Masaüstü\Senior Project\backend\obj\Debug\net8.0\MarketAPI.pdb
 C:\Users\bilgi\OneDrive\Masaüstü\Senior Project\backend\obj\Debug\net8.0\MarketAPI.genruntimeconfig.cache
 C:\Users\bilgi\OneDrive\Masaüstü\Senior Project\backend\obj\Debug\net8.0\ref\MarketAPI.dll
+C:\Users\bilgi\OneDrive\Masaüstü\Senior Project\backend\obj\Debug\net8.0\MarketAPI.sourcelink.json

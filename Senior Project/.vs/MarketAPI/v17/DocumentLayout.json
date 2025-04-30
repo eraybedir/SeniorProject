@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\bilgi\\OneDrive\\Masa\u00FCst\u00FC\\Senior Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\users\\bilgi\\onedrive\\masa\u00FCst\u00FC\\senior project\\backend\\marketapi.models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\marketapi.models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\users\\bilgi\\onedrive\\masa\u00FCst\u00FC\\senior project\\backend\\marketapi.data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\marketapi.data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\users\\bilgi\\onedrive\\masa\u00FCst\u00FC\\senior project\\backend\\marketapi.models\\productinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\marketapi.models\\productinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\users\\bilgi\\onedrive\\masa\u00FCst\u00FC\\senior project\\backend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBContext.cs",
+              "DocumentMoniker": "C:\\Users\\bilgi\\OneDrive\\Masa\u00FCst\u00FC\\Senior Project\\backend\\MarketAPI.Data\\DBContext.cs",
+              "RelativeDocumentMoniker": "backend\\MarketAPI.Data\\DBContext.cs",
+              "ToolTip": "C:\\Users\\bilgi\\OneDrive\\Masa\u00FCst\u00FC\\Senior Project\\backend\\MarketAPI.Data\\DBContext.cs",
+              "RelativeToolTip": "backend\\MarketAPI.Data\\DBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T17:37:40.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductInputModel.cs",
+              "DocumentMoniker": "C:\\Users\\bilgi\\OneDrive\\Masa\u00FCst\u00FC\\Senior Project\\backend\\MarketAPI.Models\\ProductInputModel.cs",
+              "RelativeDocumentMoniker": "backend\\MarketAPI.Models\\ProductInputModel.cs",
+              "ToolTip": "C:\\Users\\bilgi\\OneDrive\\Masa\u00FCst\u00FC\\Senior Project\\backend\\MarketAPI.Models\\ProductInputModel.cs",
+              "RelativeToolTip": "backend\\MarketAPI.Models\\ProductInputModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T17:37:06.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\bilgi\\OneDrive\\Masa\u00FCst\u00FC\\Senior Project\\backend\\MarketAPI.Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "backend\\MarketAPI.Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\bilgi\\OneDrive\\Masa\u00FCst\u00FC\\Senior Project\\backend\\MarketAPI.Models\\ApplicationUser.cs",
+              "RelativeToolTip": "backend\\MarketAPI.Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T17:36:43.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\bilgi\\OneDrive\\Masa\u00FCst\u00FC\\Senior Project\\backend\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\bilgi\\OneDrive\\Masa\u00FCst\u00FC\\Senior Project\\backend\\Controllers\\ProductController.cs",
               "RelativeToolTip": "backend\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowGIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T08:51:32.34Z",
+              "WhenOpened": "2025-04-30T17:15:15.008Z",
               "EditorCaption": ""
             }
           ]
