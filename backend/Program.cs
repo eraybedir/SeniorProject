@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -36,8 +35,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Only use HTTPS redirection if not in development
-if (!app.Environment.IsDevelopment())
+// Configure the URLs
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+app.Urls.Add($"http://0.0.0.0:{port}");
+
+// Only use HTTPS redirection in production and when not running on Render
+if (app.Environment.IsProduction() && !app.Environment.IsEnvironment("Render"))
 {
     app.UseHttpsRedirection();
 }
