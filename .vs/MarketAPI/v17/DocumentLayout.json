@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\SeniorProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\projects\\seniorproject\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\projects\\seniorproject\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\projects\\seniorproject\\backend\\marketapi.data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\marketapi.data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\projects\\seniorproject\\backend\\marketapi.models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\marketapi.models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\projects\\seniorproject\\backend\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\projects\\seniorproject\\backend\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\projects\\seniorproject\\backend\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\projects\\seniorproject\\backend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\projects\\seniorproject\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|c:\\projects\\seniorproject\\backend\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7C0186-31A7-B5AE-E8B0-1F90A57F1BC0}|backend\\MarketAPI.csproj|solutionrelative:backend\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Projects\\SeniorProject\\backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "backend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Projects\\SeniorProject\\backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "backend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-19T20:49:35.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projects\\SeniorProject\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "backend\\appsettings.json",
+              "ToolTip": "C:\\Projects\\SeniorProject\\backend\\appsettings.json",
+              "RelativeToolTip": "backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-19T20:49:06.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DBContext.cs",
+              "DocumentMoniker": "C:\\Projects\\SeniorProject\\backend\\MarketAPI.Data\\DBContext.cs",
+              "RelativeDocumentMoniker": "backend\\MarketAPI.Data\\DBContext.cs",
+              "ToolTip": "C:\\Projects\\SeniorProject\\backend\\MarketAPI.Data\\DBContext.cs",
+              "RelativeToolTip": "backend\\MarketAPI.Data\\DBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T19:09:14.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Projects\\SeniorProject\\backend\\MarketAPI.Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "backend\\MarketAPI.Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Projects\\SeniorProject\\backend\\MarketAPI.Models\\ApplicationUser.cs",
+              "RelativeToolTip": "backend\\MarketAPI.Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwCYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T18:58:20.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\SeniorProject\\backend\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "backend\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Projects\\SeniorProject\\backend\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "backend\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T18:55:25.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\SeniorProject\\backend\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "backend\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "C:\\Projects\\SeniorProject\\backend\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "backend\\Interfaces\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T18:54:52.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Projects\\SeniorProject\\backend\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Projects\\SeniorProject\\backend\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "backend\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T18:49:40.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Projects\\SeniorProject\\backend\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Projects\\SeniorProject\\backend\\Services\\ProductService.cs",
+              "RelativeToolTip": "backend\\Services\\ProductService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T18:46:41.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Projects\\SeniorProject\\backend\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "backend\\Interfaces\\IProductService.cs",
+              "ToolTip": "C:\\Projects\\SeniorProject\\backend\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "backend\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T18:45:52.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\SeniorProject\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "C:\\Projects\\SeniorProject\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T18:45:26.529Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
