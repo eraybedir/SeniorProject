@@ -18,7 +18,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<IProductRepository,ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
 
-//CORS(Cross-Origin Resource Sharing) CORS, farklý domain’ler (alan adlarý) arasýnda web isteklerine izin verilip verilmemesini kontrol eder. Flutter<->.NET API
+//CORS(Cross-Origin Resource Sharing) CORS, farkl domainler (alan adlar) arasnda web isteklerine izin verilip verilmemesini kontrol eder. Flutter<->.NET API
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
@@ -26,7 +26,6 @@ builder.Services.AddCors(options =>
         builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
     });
 });
-
 
 var app = builder.Build();
 
@@ -37,7 +36,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// Only use HTTPS redirection if not in development
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
 
 app.UseCors("AllowAll");
 app.UseAuthorization();
